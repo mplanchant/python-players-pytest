@@ -19,6 +19,7 @@ class TestPlayer:
         assert player.shirt_number == 33
         assert player.position == Position.DEFENCE
         assert player.dob == date(1980, 1, 29)
+        assert player.is_goalkeeper() == False
 
     @pytest.mark.parametrize("dob, expected_age", [
         (date(1980, 1, 29), 46),
